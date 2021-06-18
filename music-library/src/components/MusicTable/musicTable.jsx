@@ -1,9 +1,6 @@
 import React from "react";
 
 function MusicTable(props){
-    // let allMusicData = props.data.map((music) => {
-
-    // })
     return(
         <table class="table">
   <thead>
