@@ -1,18 +1,32 @@
 import React from "react";
 
-//search.filter
+//props.search.filter(Search)
+//function checkMusic(props)
+//userInput === props.search
 
-function Filter(props) {
-  return (
-    <select class="form-select" aria-label="Default select example">
-      <option selected>Would you like to search by</option>
-      <option value="1">Title</option>
-      <option value="2">Album</option>
-      <option value="3">Artist</option>
-      <option value="4">Genre</option>
-      <option value="5">Release Date</option>
-    </select>
+// function Filter(props) {return(props.search);}
+
+
+
+
+function Search(props) {
+  return(
+    <div>
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search..." name="search"></input>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   );
 }
 
-export default Filter;
+function Filter(props){
+  return(
+    <div>
+      {props.search}
+    </div>
+  )
+}
+
+
+export default Search;
